@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <title>TestImageDesign</title>
+</head>
+
+<body>
+    <div class="nav bg-color">
+        <div class="loading">
+            <span class="load"></span>
+            <span class="load"></span>
+            <span class="load"></span>
+            <span class="bang">Bang The Table</span>
+            <button type="submit" class="btn">&check;</button>
+            <input type="search" class="search" placeholder="Subscribe to the newsletter">
+        </div>
+    </div>
+    <div class="container-main">
+        <div class="grid-container" id="appendData">
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    $.ajax({url: "db.json", success: function(result){
+        var cardDetials='';
+        var getDiv='';
+        cardDetials = result;
+        for (var key in cardDetials) {
+            if (cardDetials.hasOwnProperty(key)) {
+                getDiv +=`<div class="${cardDetials[key].isLarge == true && cardDetials.length - 1 == key && 'item10'} ${cardDetials[key].isLarge == true && cardDetials.length - 1 != key && 'item1'} ${cardDetials[key].isLarge == false && key == 3 ? 'item4 bg-purple' : 'item2 bg-purple'}">
+                    <div class="item item-bg1 ${key != 3 && 'item-bg' }"  style="background-image:url(${cardDetials[key].imgUrl})"></div>`;
+                if(key == 3){
+                    getDiv +=`<div class="card-des">
+                        <div class="loading itm4-loading">
+                            <span class="load"></span>
+                            <span class="load"></span>
+                            <span class="load"></span>
+                        </div>
+                        <h1 class="itm4-cont"> ${cardDetials[key].title}</h2>
+                        <button class="btn-mp mt-10">Try Mixpanel today</button>
+                    </div>`;
+                }else{
+                    getDiv +=` <div class="card-des slider">
+                        <li style="list-style-type: circle;">${cardDetials[key].title}</li>
+                        <h2>Leveraging Social Proof for <br>Growth</h2>
+                        <p class="dum-cont">${cardDetials[key].description}</p>
+                        <div class="d-flex">
+                            <div class="mr-12">
+                                <i class="far fa-user fa-xs"></i>
+                                <span class="fs-xs">Anna</span>
+                            </div>
+                            <div class="mr-12">
+                                <i class="far fa-clock fa-xs"></i>
+                                <span class="fs-xs">Today</span>
+                            </div>
+                        </div>
+                    </div>`;
+                }
+                getDiv +=`</div>`;
+            }
+        }           
+        $('#appendData').append(getDiv);
+        console.log(getDiv,"hey")
+    }});
+</script>
+</html>

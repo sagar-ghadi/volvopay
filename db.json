@@ -1,0 +1,81 @@
+
+[
+    {
+        "id": 1,
+        "imgUrl":"assets/images/opp.jpg",
+        "title": "Library Update",
+        "headding": "Leveraging Social Proof for",
+        "description":"Duolingo removes language barriers by connecting people that need websites translated with students that are learning a language. Through trial and error the team at Duolingo has mastered the art of data driven product development through AB testing and a focus on the right metrics to optimize driven product development through AB testing and a focus on the right metrics to to optimize driven product development through AB testing and a focus on the right optimize.",
+        "isLarge":true
+    },
+    {
+        "id": 2,
+        "imgUrl":"assets/images/pc.png",
+        "title": "Library Update",
+        "headding": "Leveraging Social Proof for Growth",
+        "description":"Duolingo removes language barriers by connecting people that need websites translated with students that are learning a language. Through trial and error the team at Duolingo has mastered",
+        "isLarge":false
+    },
+    {
+        "id": 3,
+        "imgUrl":"assets/images/grp.jpg",
+        "title": "Culture and Team",
+        "headding": "Leveraging Social Proof for Growth",
+        "description":"Duolingo removes language barriers by connecting people that need websites translated with students that are learning a language. Through trial and error the team at Duolingo has mastered",
+        "isLarge":false
+    },
+    {
+        "id": 4,
+        "title": "Its time to get to know your users",
+        "isLarge":false
+    },
+    {
+        "id": 5,
+        "imgUrl":"assets/images/camara.jpg",
+        "title": "Culture and Team",
+        "headding": "Leveraging Social Proof for Growth",
+        "description":"Duolingo removes language barriers by connecting people that need websites translated with students that are learning a language. Through trial and error the team at Duolingo has mastered",
+        "isLarge":false
+    },
+    {
+        "id": 6,
+        "imgUrl":"assets/images/light.png",
+        "title": "Product Launch",
+        "headding": "Leveraging Social Proof for Growth",
+        "description":"Duolingo removes language barriers by connecting people that need websites translated with students that are learning a language. Through trial and error the team at Duolingo has mastered",
+        "isLarge":false
+    },
+    {
+        "id": 7,
+        "imgUrl":"assets/images/ddc.jpeg",
+        "title": "ddc",
+        "headding": "Leveraging Social Proof for Growth",
+        "description":"Duolingo removes language barriers by connecting people that need websites translated with students that are learning a language. Through trial and error the team at Duolingo has mastered",
+        "isLarge":false
+    },
+    {
+        "id": 8,
+        "imgUrl":"assets/images/ddc.jpeg",
+        "title": "ddc",
+        "headding": "Leveraging Social Proof for Growth",
+        "description":"Duolingo removes language barriers by connecting people that need websites translated with students that are learning a language. Through trial and error the team at Duolingo has mastered",
+        "isLarge":false
+    },
+    {
+        "id": 9,
+        "imgUrl":"assets/images/man.jpg",
+        "title": "Culture and Team",
+        "headding": "Leveraging Social Proof for Growth",
+        "description":"Duolingo removes language barriers by connecting people that need websites translated with students that are learning a language. Through trial and error the team at Duolingo has mastered",
+        "isLarge":false
+    },
+    {
+        "id": 10,
+        "imgUrl":"assets/images/stat.png",
+        "title": "Trends",
+        "headding": "Leveraging Social Proof for Growth",
+        "description":"Duolingo removes language barriers by connecting people that need websites translated with students that are learning a language. Through trial and error the team at Duolingo has mastered the art of data driven product development through AB testing and a focus on the right metrics to optimize driven product development through AB testing and a focus on the right metrics to to optimize driven product development through AB testing and a focus on the right optimize.",
+        "isLarge":true
+    }
+        
+]
